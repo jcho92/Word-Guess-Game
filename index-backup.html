@@ -11,14 +11,7 @@
 </head>
 
 <body>
-    <div id="loadingScreen" style="display: block;">
-        <div style=" text-align: center;">
-            <img src="assets/SnoopyPoorAiredaleterrier-size_restricted.gif">
-            <p>Repair Thor by figuring out the secret pass code and initiate Immortalilty Protocol</p>
-            <input type="button" id="start" onclick="start()" value="start" >
-            <p>Starcraft 2 themed word guessing game, Terran Edition</p>
-        </div>
-    </div>
+    
     <div id="body" class="hide body">
         <div class="navigation" style="width:100%; height: 55px; text-align: center;">
             <input type="button" id="stopmusic" onclick="stopMusic()" value="Stop Music">
@@ -29,20 +22,20 @@
             <div class="row" style="display:block; text-align: center">
                 <div class="main-content" style="height:370px; width: 300px; float: left;">
                     <div class="left-rail" style="margin-left:55px; text-align:center;">
-
+                        
 
                         <p class="info" id="wrongLetters">wrong letters: </p>
-                    </div>
+                                           </div>
                 </div>
                 <div class="main-content" style="height:370px; width: 700px; display: inline-block; margin-left: auto; margin-right: auto;  ">
                     <img src="ezgif-1-159c61a8c54a.gif">
-
+                    
                     <p id="display"></p>
                 </div>
 
                 <div class="main-content" style="height:370px; width: 300px; float: right;">
-                    <img id="portrait" style="height: 150px; width: 200px; padding-top:10%; display: none;" src="assets/SnoopyPoorAiredaleterrier-size_restricted.gif">
-
+                <img id="portrait" style="height: 150px; width: 200px; padding-top:10%; display: none;" src="https://thumbs.gfycat.com/SnoopyPoorAiredaleterrier-size_restricted.gif">
+                
                 </div>
             </div>
         </div>
@@ -111,25 +104,21 @@
         </div>
     </div>
 
-    
-    <div id="popup" style="display: none;">
-        <div id="winPop" style="display: none;">
+    <input type="button" id="start" onclick="start()" value="start" style="position:fixed; top:50%; right:50%">
+<div id ="popup" style= "display: none;">
+    <div  id ="winPop" style= "display: none;">
             <img id="portrait" src="https://thumbs.gfycat.com/SnoopyPoorAiredaleterrier-size_restricted.gif">
             <p>Good job you guessed the word and saved Thor, click the button to play again</p>
-            <center>
-                <p class="info" id="answer"></p>
-            </center>
+            <center><p class="info" id="answer"></p></center>
             <input type="button" id="again" onclick="again()" value="Play Again">
-        </div>
-        <div id="lossPop" style="display: none; text-align: center;">
-            <img id="portrait" src="https://thumbs.gfycat.com/SnoopyPoorAiredaleterrier-size_restricted.gif">
-            <p>GameOver! click the button to play again</p>
-            <center>
-                <p class="info" id="answer2"></p>
-            </center>
-            
-        </div>
-    </div>
+</div>
+<div  id ="lossPop" style= "display: none; text-align: center;">
+        <img id="portrait" src="https://thumbs.gfycat.com/SnoopyPoorAiredaleterrier-size_restricted.gif">
+        <p>GameOver! click the button to play again</p>
+        <center><p class="info" id="answer2"></p></center>
+        <input type="button" id="again" onclick="again()" value="Play Again">
+       </div>
+</div>
 
 
 

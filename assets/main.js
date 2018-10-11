@@ -11,12 +11,16 @@ var fiveAttempts = new Audio('Thor_Repaired01.mp3');
 var backgroundSong = new Audio('Starcraft 2 Terran Theme Music.mp3');
 var fourAttempts = new Audio('Thor_Pissed09.mp3');
 var sixAttempts = new Audio('Thor_What05.mp3');
+var tenAttempts = new Audio('Thor_What03.mp3');
+var twelveAttempts = new Audio('Thor_Pissed10.mp3');
+
 
 
 function start() {
     document.getElementById('start').disabled = true;
     document.getElementById('start').style.display = "none";
     document.getElementById("body").className = 'show';
+    document.getElementById("loadingScreen").style.display = "none";
     startGame.play();
     backgroundSong.play();
     backgroundSong.volume = 0.5;
@@ -139,7 +143,7 @@ function test() {
         hideImage();
     }
     if ((buttonClicked.length == 6) && (answerArray.join("") != playWord)) {
-        twoAttempts.play();
+        sixAttempts.play();
         hideImage();
     }
     if ((buttonClicked.length == 8) && (livesLeft != 5) && (livesLeft != 1) ) {
@@ -147,11 +151,19 @@ function test() {
         hideImage();
     }
     if ((buttonClicked.length == 2) && (livesLeft != 1) && (livesLeft != 5) ) {
-        fiveAttempts.play();
+        twoAttempts.play();
         hideImage();
     }
     if ((buttonClicked.length == 4) && (answerArray.join("") != playWord)) {
         fourAttempts.play();
+        hideImage();
+    }
+    if ((buttonClicked.length == 10) && (answerArray.join("") != playWord)) {
+        tenAttempts.play();
+        hideImage();
+    }
+    if ((buttonClicked.length == 12) && (answerArray.join("") != playWord)) {
+        twelveAttempts.play();
         hideImage();
     }
 }
